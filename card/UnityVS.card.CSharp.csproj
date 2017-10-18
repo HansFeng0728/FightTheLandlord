@@ -194,7 +194,11 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+    <Compile Include="Assets\Scripts\Back.cs" />
+    <Compile Include="Assets\Scripts\Card.cs" />
     <Compile Include="Assets\Scripts\EnterScale.cs" />
+    <Compile Include="Assets\Scripts\Lobby.cs" />
+    <Compile Include="Assets\Scripts\PlayerInfo.cs" />
     <Compile Include="Assets\Scripts\SignIn.cs" />
   </ItemGroup>
   <ItemGroup>

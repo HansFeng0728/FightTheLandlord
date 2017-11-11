@@ -3,9 +3,13 @@ using System.Collections;
 
 public class Back : MonoBehaviour {
 
+    private UIPanel panel;
+    void Start()
+    {
+        panel = this.transform.parent.GetComponent<UIPanel>();
+    }
 	public void backView()
     {
-        UIPanel panel = this.transform.parent.GetComponent<UIPanel>();
         panel.alpha = 0;
     }
 }

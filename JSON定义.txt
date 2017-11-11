@@ -3,36 +3,31 @@ JsonObject
 {
     "msg": [
         {
-           "token": "",  				//消息唯一序列码
-		   "roomId": "",   				//房间Id
-           "users": [   
-				{
-				"userState": "0-4",    	//0 未进入游戏  1 进入游戏  2 进入房间（未准备） 3 进入房间（已准备）
-				"userId": "",  
-				"score": "",     		//用户分数
-				"isLandLord": "0/1", 	//是不是地主
-				"userPosition":"",  	//用户位置
-				"userpokerList":"",  	//用户拥有的卡牌
-				"daojishiTime":"",	  	//倒计时准备时间
-				}
-            ],
-			
-			"pokers": [
-				{
-				"pokerId": "0/1",  		//卡牌Id 共54个
-				"pokerColor": "",  		//颜色  四个
-				"pokerNum":""3","4","5","6","7","8","9","10","J","Q","K","A","2","SJoker","BJoker"",     			//卡牌的牌面大小
-				"pokerList":"",			//分给每个用户的卡牌list
-				}
-            ],
-			
-			"sendMsg":[   			   //预留的  聊天
-				{
-				"text":"",
-				}
-			]
-         
-		},
+        "token": "",  				//消息唯一序列码
+		"roomId": "",   		    //房间Id   
+		"text":"", 			        //预留的  聊天
+		}
+    ],
+	
+    "pokers": [
+		{
+		"pokerId": "0/1",  		//卡牌Id 共54个
+		"pokerColor": "",  		//颜色  四个
+		"pokerNum":""3","4","5","6","7","8","9","10","J","Q","K","A","2","SJoker","BJoker"",     			//卡牌的牌面大小
+		"pokerList":"",			//分给每个用户的卡牌list
+		}
+    ],				
+	
+	"users": [   
+		{
+		"userState": "0-4",    	//0 未进入游戏  1 进入游戏  2 进入房间（未准备） 3 进入房间（已准备）
+		"userId": "",  
+		"score": "",     		//用户分数
+		"isLandLord": "0/1", 	//是不是地主
+		"userPosition":"",  	//用户位置
+		"userpokerList":"",  	//用户拥有的卡牌
+		"daojishiTime":"",	  	//倒计时准备时间
+		}
     ],
 	
 	"sendPokers":[
@@ -48,7 +43,7 @@ JsonObject
 		{
 		"suggestPokers":"",	   //提示建议出的牌，如果为空则为不出
 		}
-	]
+	],
 	
     "error_code": 0
 }
